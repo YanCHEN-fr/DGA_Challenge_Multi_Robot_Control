@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node name="server" 
+        pkg="multi_robot" 
+        type="server.py"
+        respawn="true"
+        output="screen"
+    />
+
+    <node name="get_robot_positions" 
+        pkg="multi_robot" 
+        type="get_robot_position.py"
+        respawn="true"
+        output="screen"
+    />
+
+    <node ns="husky1" name="$(anon move_husky)" pkg="multi_robot" type="husky_planner.py" respawn="true" output="screen">
+        <param name="robot_N" type="int" value="1" /> 
+    </node>
+    <node ns="husky2" name="$(anon move_husky)" pkg="multi_robot" type="husky_planner.py" respawn="true" output="screen">
+        <param name="robot_N" type="int" value="2" /> 
+    </node>
+    <node ns="husky3" name="$(anon move_husky)" pkg="multi_robot" type="husky_planner.py" respawn="true" output="screen">
+        <param name="robot_N" type="int" value="3" /> 
+    </node>
+    <node ns="husky4" name="$(anon move_husky)" pkg="multi_robot" type="husky_planner.py" respawn="true" output="screen">
+        <param name="robot_N" type="int" value="4" /> 
+    </node>
+
+    
+     <node
+        ns="drone1"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="1"/>
+        <param name="path_id" type="int" value="1"/>
+    </node>
+
+    <node ns="drone1"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="1"/>
+    </node> 
+
+  
+
+
+     <node ns="drone2" 
+    name="$(anon move_drone)" pkg="multi_robot" type="drone_navigation.py" respawn="true" output="screen">
+        <param name="drone_N" type="int" value="2"/>
+        <param name="path_id" type="int" value="2"/>
+    </node>
+
+    <node ns="drone2"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="2"/>
+    </node>
+
+
+    <node
+        ns="drone3"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="3"/>
+        <param name="path_id" type="int" value="3"/>
+    </node>
+
+    <node
+        ns="drone3"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="3"/>
+    </node>
+
+    <node
+        ns="drone4"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="4"/>
+        <param name="path_id" type="int" value="4"/>
+    </node>
+
+    <node
+        ns="drone4"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="4"/>
+    </node>
+
+    <node
+        ns="drone5"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="5"/>
+        <param name="path_id" type="int" value="5"/>
+    </node>
+
+    <node
+        ns="drone5"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="5"/>
+    </node>
+
+    <node
+        ns="drone6"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="6"/>
+        <param name="path_id" type="int" value="6"/>
+    </node>
+
+    <node
+        ns="drone6"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="6"/>
+    </node>
+
+    <node
+        ns="drone7"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="7"/>
+        <param name="path_id" type="int" value="7"/>
+    </node>
+
+    <node
+        ns="drone7"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="7"/>
+    </node>
+
+<node
+        ns="drone8"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="8"/>
+        <param name="path_id" type="int" value="8"/>
+    </node>
+
+    <node
+        ns="drone8"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="8"/>
+    </node>
+
+    <node
+        ns="drone9"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="9"/>
+        <param name="path_id" type="int" value="9"/>
+    </node>
+
+    <node
+        ns="drone9"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="9"/>
+    </node> 
+
+    <!-- <node
+        ns="drone10"
+        name="$(anon move_drone)"
+        pkg="multi_robot"
+        type="drone_navigation.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" type="int" value="10"/>
+        <param name="path_id" type="int" value="10"/>
+    </node>
+
+    <node
+        ns="drone10"
+        name="$(anon infraRed_detect)"
+        pkg="multi_robot"
+        type="infrared_detector.py"
+        respawn="true"
+        output="screen"
+    >
+        <param name="drone_N" value="10"/>
+    </node> -->
+</launch>

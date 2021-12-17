@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/devel/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/vision_opencv/cv_bridge/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_gazebo/hector_gazebo_plugins/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_gazebo/hector_gazebo_thermal_camera/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_localization/hector_pose_estimation/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_localization/hector_pose_estimation_core/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_quadrotor_actions/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_quadrotor_controller_gazebo/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_quadrotor_gazebo_plugins/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_quadrotor_interface/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_quadrotor_model/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_quadrotor_pose_estimation/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/hector_quadrotor/hector_uav_msgs/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/husky/husky_base/include/**",
+        "/media/ck/B6DAFDC2DAFD7F45/program/ROS_project/dga_project/src/vision_opencv/image_geometry/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
