@@ -111,7 +111,7 @@ rosrun yolo yolo_ros.py
 
 **Package :** turtlebot_navigation and turtlebot_rviz_launchers
 
-<img src="./README.assets/RVIZ.png" alt="RVIZ" style="zoom:150%;" />
+<img src="./ReadMe.assets/RVIZ.png" alt="RVIZ" style="zoom:150%;" />
 
 ## Test on turtlebot2
 
@@ -123,7 +123,7 @@ Although we got the first place, the automatic system still needs to be improved
 
 1. Can we develop an algorithm that can effectively avoid obstacles in a dense environment ？
 
-   <img src="./README.assets/obstacle.png" alt="obstacle" style="zoom:50%;" />
+   <img src="./ReadMe.assets/obstacle.png" alt="obstacle" style="zoom:50%;" />
 
 2. Can we reseanably consider the kill zones for drone navigation ?
 
